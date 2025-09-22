@@ -31,26 +31,19 @@ Long_March/
 ### 环境要求
 
 - Python 3.8+
-- Windows 10/11 (推荐)
+- Windows 10/11 (推荐) 以及Linux
 
 ### 快速开始
 
 1. **一键启动** (推荐)
    ```bash
-   # 双击运行
-   start_all.bat
+   # 安装依赖
+   pip install -r requirements.txt
+   # 运行
+   先运行server端，再运行client端
    ```
 
-2. **分别启动**
-   ```bash
-   # 启动服务端
-   start_server.bat
-   
-   # 启动客户端 (新开一个命令行窗口)
-   start_client.bat
-   ```
-
-3. **手动启动**
+2. **Linux启动**
    ```bash
    # 安装依赖
    pip install -r requirements.txt
@@ -65,13 +58,9 @@ Long_March/
 ## 使用说明
 
 ### 服务端
-
 - 默认运行在 `http://localhost:8000`
-- API文档地址: `http://localhost:8000/docs`
-- 支持健康检查: `http://localhost:8000/health`
 
 ### 客户端
-
 1. **连接测试**: 点击"测试连接"按钮检查服务端连接状态
 2. **视频播放**: 点击"播放"按钮开始播放AI人形视频
 3. **智能对话**: 在输入框中输入问题，按回车或点击"发送"按钮
@@ -128,16 +117,12 @@ responses = {
 
 ### 常见问题
 
-1. **视频无法播放**
-   - 确保 `resources/ai_avatar.mp4` 文件存在
-   - 检查视频文件格式是否支持
-
-2. **连接失败**
+1. **连接失败**
    - 确保服务端已启动
    - 检查防火墙设置
    - 确认端口8000未被占用
 
-3. **依赖安装失败**
+2. **依赖安装失败**
    - 确保Python版本 >= 3.8
    - 尝试使用管理员权限运行
    - 检查网络连接
@@ -170,5 +155,5 @@ responses = {
 ## 联系方式
 
 如有问题或建议，请通过以下方式联系：
-- 项目地址: [GitHub Repository]
-- 邮箱: [your-email@example.com]
+- 邮箱: [oadxh0806@126.com]
+
